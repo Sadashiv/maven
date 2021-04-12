@@ -8,12 +8,13 @@ mvn -version
 cd /opt/
 wget https://downloads.apache.org/archiva/2.2.5/binaries/apache-archiva-2.2.5-bin.tar.gz
 tar xvf apache-archiva-2.2.5-bin.tar.gz
-cd apache-archiva-2.2.5
+mv apache-archiva-2.2.5 archiva
 change port
 vim conf/jetty.xml
 ./bin/archiva start
 http://localhost:8091/
 
+settings.xml is main configuration for archiva project
 
 maven is for building the java project
 maven solves the problems of manual activity and Build dependencies(third party etc)
@@ -57,6 +58,8 @@ mvn -s install(jar get created)
 Skip test cases:  -Dmaven.test.skip=true
 
 mvn -s ~/settings.xml package -Dmaven.test.skip=true
+
+For your referance internal and sna[shot repo got created
 
 
 Id: repo.external
