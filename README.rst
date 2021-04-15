@@ -1,6 +1,8 @@
 Maven building the Java Project
 ===============================
 
+https://archiva.apache.org/docs/2.2.5/adminguide/repositories.html
+
 Installation of archiva
 =======================
 which mvn
